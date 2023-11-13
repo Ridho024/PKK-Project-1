@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #0b090a;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #a9acaf;
+}
+
+.introduction {
+  background-color: #14213d;
+  height: auto;
+  color: white;
+}
+
+.introduction .second div {
+  border: 1px solid black;
+}
+
+.introduction .second div:hover {
+  background-color: rgb(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .introduction {
+    height: 100vh;
+    color: whitesmoke;
+    box-sizing: border-box;
+    align-items: center;
+    padding-top: 4rem;
+  }
+  .introduction .first {
+    padding: 0 4rem 0 4rem;
+  }
+  
+
+  .introduction .second div {
+    border: 1px solid black;
+  }
+
+  .introduction .second div:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+
+  .introduction .first div .card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .introduction .first div .card {
+    transition: 0.3s;
+  }
+
+  .project {
+    height: 105vh;
+    color: black;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .project .first div h2 {
+    color: black;
+    text-shadow: 0 2px 5px rgb(0, 0, 0, 0.4);
+  }
+
+  /* Box shadow white bisa dipakai untuk efek menyala */
+
+  .project .second div .card,
+  .project .third div .card {
+    box-shadow: 0 3px 8px rgb(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+
+  .project .second div .card:hover,
+  .project .third div .card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+
+  .about {
+    height: 140vh;
+    box-sizing: border-box;
+  }
+
+  .about .first div .card,
+  .about .second div .card,
+  .about .third div .card {
+    box-shadow: 0 3px 8px rgb(0, 0, 0, 0.4);
+    transition: 0.3s;
+  }
+
+  .about .first div .card:hover,
+  .about .second div .card:hover,
+  .about .third div .card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+
+  .footer {
+    height: 40vh;
+  }
+
+  /* .about .first .text-center {
+    text-align: justify;
+    text-justify: inter-word;
+  } */
+}
+
+@media screen and (max-width: 845px) {
+  .project {
+    height: auto;
+  }
+  .about {
+    height: auto;
+  }
+}
+
+.project {
+  background-color: #fca311;
+  color: black;
+}
+
+.project .second div .card,
+.project .third div .card {
+  box-shadow: 0 3px 8px rgb(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.about {
+  background-color: #e5e5e5;
+}
+
+.footer {
+  background-color: #ffffff;
+}
